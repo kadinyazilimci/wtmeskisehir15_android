@@ -4,5 +4,10 @@
     <string name="app_name">Wtmeskisehir15_android</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    <string name="info_for_game">Sizin için 1 ile 10 arası bir sayı seçtik. Haydi tahmin edin!</string>
+    
+    <string name="ifeellucky">Kendimi şanslı hissediyorum!</string>
+    <string name="tryagain">Tekrar dene!</string>
 
 </resources>

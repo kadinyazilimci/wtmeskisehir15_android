@@ -9,8 +9,56 @@
     tools:context="com.kadinyazilimci.activity.MainActivity" >
 
     <TextView
+        android:id="@+id/game_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/info_for_game"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/info_text_size" />
+
+    <EditText
+        android:id="@+id/user_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/game_info"
+        android:layout_below="@+id/game_info"
+        android:layout_marginTop="40dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_ifeellucky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_guess"
+        android:layout_alignRight="@+id/user_guess"
+        android:layout_below="@+id/user_guess"
+        android:layout_marginTop="16dp"
+        android:text="@string/ifeellucky" />
+
+    <Button
+        android:id="@+id/button_tryagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_ifeellucky"
+        android:layout_alignRight="@+id/button_ifeellucky"
+        android:layout_below="@+id/button_ifeellucky"
+        android:layout_marginTop="16dp"
+        android:text="@string/tryagain" />
+    <ImageView
+        android:id="@+id/situation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/game_info"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/womentech" />
 
 </RelativeLayout>
